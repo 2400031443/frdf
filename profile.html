@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #0078d7, #00bcd4);
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 320px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+    .card-header {
+      background: url("https://www.transparenttextures.com/patterns/cubes.png"), linear-gradient(135deg, #0078d7, #00bcd4);
+      height: 100px;
+    }
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-top: -60px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .card p.role {
+      color: #0078d7;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+    .card p.info {
+      color: #dcc0c0;
+      font-size: 14px;
+      margin: 3px 0;
+    }
+    .card .contact a {
+      display: block;
+      text-decoration: none;
+      color: #6c6767;
+      font-size: 14px;
+      margin: 5px 0;
+      transition: color 0.3s;
+    }
+    .card .contact a:hover {
+      color: #5a6d7c;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px auto;
+      padding: 10px 25px;
+      background: #607281;
+      color: rgb(211, 196, 196);
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #b8d9f0;
+    }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 18px;
+      color: #d70000;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #a30026;
+    }
+  </style>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header"></div>
+    
+    <!-- Your uploaded photo -->
+    <img src="WhatsApp Image 2024-12-07 at 16.08.31_f558e09a.jpg" alt="Profile">
+    
+    <h2>Guru</h2>
+    <p class="role">Frontend Developer</p>
+    
+    <p class="info">📍 India</p>
+    
+    <div class="contact">
+      <a href="tel:8247323986">📞 8247323986</a>
+      <a href="mailto:mymailid@example.com">✉️ mymailid@example.com</a>
+    </div>
+    
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    
+    <a href="#" class="btn">Connect</a>
+  </div>
+</body>
+</html>
